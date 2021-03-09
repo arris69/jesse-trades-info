@@ -153,7 +153,7 @@ export default {
       return [...item.orders]
     })
 
-    orders = orders.flat()
+    orders = orders.concat(...orders)
 
     return {
       trades,
